@@ -59,7 +59,6 @@ object coctel {
     method rendimiento(cantidad) {
         var total = 1
         bebidas.forEach({unaBebida => total = bebidas.rendimiento(cantidad / bebidas.size()) * total})
-        total == 0
         return total
     }
 }
